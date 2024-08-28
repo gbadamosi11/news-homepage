@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:sans-serif, 'inter';
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+    outline: none;
+}
+
+p{
+    font-size: 14px;
+}
+.container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;   
+    gap: 30px;
+}
+/* Navigation */
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: block;
+}
+
+.nav-list{
+    display: none;
+}
+.nav-list li a{
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+}
+
+.nav-list li a:hover,
+.pc-info h3:hover{
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+}
+
+/* Main */
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.main-container_flex-1{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    width: 100%;
+    height: 100%;
+}
+.bright_ft{
+    width: 100%;
+}
+.bright_ft img{
+    width: 100%;
+}
+.bright_ft-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.bright_ft-info h1{
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+    font-size: 38px;
+    width: 100%;
+}
+.bright_ft-info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bright_ft-info-text p{
+    line-height: 1.7;
+}
+.bright_ft-info-text button{
+    width: 180px;
+    padding: 15px 30px;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(240, 100%, 5%);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.bright_ft-info-text button:hover{
+    cursor: pointer;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
+.new{
+    background-color: hsl(240, 100%, 5%);
+}
+.new-container{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.new-container h1{
+    font-size: 32px;
+    color: hsl(35, 77%, 62%);
+    font-weight: 400;
+}
+.new-info{
+    line-height: 1.7;
+}
+.new-info h2{
+    color: hsl(36, 100%, 99%);
+}
+.new-info h2:hover{
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}
+.new-info p{
+    color: hsl(233, 8%, 79%);
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: hsl(233, 8%, 79%);
+}
+
+.main-container_flex-2{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    height: 100%;
+}
+.pc-container{
+    display: flex;
+    gap: 10px;
+}
+.pc-container img{
+    height: 106px;
+    width: 80px;
+}
+.pc-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pc-info h2{
+    color: hsl(5, 85%, 63%) ;
+    font-size: 20px;
+    font-weight: 800;
+}
+.pc-info h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+}
+.pc-info p{
+    color: hsl(236, 13%, 42%);
+    line-height: 1.3;
+}
+
+/* side-bar */
+
+
+/* Responsiveness */
+@media screen and (min-width: 1140px){
+    p{
+        font-size: 15px;
+    }
+    
+    .container{
+        padding: 70px 100px;
+        gap: 50px;
+    }
+    
+    .nav-container{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .menu, .close{
+        display: none;
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    
+    /* Main */
+    .main-container{
+        gap: 100px;
+    }
+    .main-container_flex-1{
+        flex-direction: row;
+    }
+    .bright_ft{
+        width: 70%;
+    }
+    .bright_ft-info{
+        flex-direction: row;
+    }
+    .bright_ft-info h1{
+        font-size: 48px;
+        width: 48%;
+    }
+    
+    .main-container_flex-2{
+        flex-direction: row;
+        gap: 7rem;
+    }
+    .pc-container{
+        gap: 15px;
+    }
+    .pc-container img{
+        height: 134px;
+        width: 106px;
+    }
+    .pc-info{
+        gap: 15px;
+    }
+    .pc-info h2{
+        font-size: 24px;
+    }
+
+    .pc-info p{
+        line-height: 1.7;
+    }
+    
+}
