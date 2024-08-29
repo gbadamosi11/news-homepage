@@ -125,7 +125,7 @@ p{
     font-weight: 400;
 }
 .new-info{
-    line-height: 1.7;
+    line-height: 1.7; 
 }
 .new-info h2{
     color: hsl(36, 100%, 99%);
@@ -179,7 +179,14 @@ p{
 }
 
 /* side-bar */
-
+.sidebar{
+    /* background-color: hsl(36, 100%, 99%); */
+    /* background-color: red;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 140px; */
+}
 
 /* Responsiveness */
 @media screen and (min-width: 1140px){
@@ -246,5 +253,10 @@ p{
     .pc-info p{
         line-height: 1.7;
     }
+
+    .sidebar{
+        display: none;
+    }
     
 }
+
